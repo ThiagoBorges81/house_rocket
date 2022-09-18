@@ -62,7 +62,7 @@ This is the product that will be sent for the CEO to fullfill his requirements:
 
 • A table with the suggested buying properties;  
 • A table with the suggested time and price for selling;  
-• A web application for data exploration.  
+• A [web](https://thiagoborges81-house-rocket-dashboard-tljjx9.streamlitapp.com/) application for data exploration.  
 
 **3.2 Tools**  
 
