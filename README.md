@@ -52,9 +52,9 @@ The company has a large database of properties located in King’s County in Was
     • The seasonality influence the price of the property. The price fluctuates depending on the warmer or colder seasons of the year.  
     
     
-**3. Solution plan**  
+**3. Planning the Solution**  
 
-There are three components in the solution that makes up the solution plan: the deliverable, the tools and the process. Take a look below for further details:
+There are three components in the solution that makes up the solution plan: the deliverable, the tools used, and the process. Take a look below for further details:
 
 **3.1 The deliverable**  
 
