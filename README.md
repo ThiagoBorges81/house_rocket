@@ -1,6 +1,6 @@
 # House Rocket
 
-**disclosure:** House Rocket is a fictional company and all the procedures and dicussions presented here are intended to practice and show my data science skills, and also for educational purposes. The assumptions, questions and conclusions/proposals are fictional and made solely to fill the requirements of this fictional business. The data used for this project are available in the Kaggle website (https://www.kaggle.com/datasets/shivachandel/kc-house-data) in a public domain for download.
+**Disclaimer:** House Rocket is a fictional company and all the procedures and dicussions presented here are intended to practice and show my data science skills, and also for educational purposes. The assumptions, questions and conclusions/proposals are fictional and made solely to fill the requirements of this fictional business. The data used for this project are available in the Kaggle website (https://www.kaggle.com/datasets/shivachandel/kc-house-data) in a public domain for download.
 
 **1. Understanding the company**  
 
