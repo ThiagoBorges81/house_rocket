@@ -1,14 +1,14 @@
 # House Rocket
 
-**Disclaimer:** House Rocket is a fictional company and all the procedures and dicussions presented here are intended to practice and show my data science skills, and also for educational purposes. The assumptions, questions and conclusions/proposals are fictional and made solely to fill the requirements of this fictional business. The data used for this project are available in the Kaggle website (https://www.kaggle.com/datasets/shivachandel/kc-house-data) in a public domain for download.
+**Disclaimer:** House Rocket is a fictional company. Even though the business is fictional, here I present a real-world solution using data science methods. Therefore, all the procedures and discussions presented here are intended to present my data science skills as well as practice and educational purposes. The assumptions, questions and conclusions/proposals are fictional and made solely to fill the requirements of this fictional business. The data used for this project are available in the Kaggle website (https://www.kaggle.com/datasets/shivachandel/kc-house-data) in a public domain for download.
 
 **1. Understanding the company**  
 
-The real estate businesses possess diverse ways to generate revenue, including real estate agent, wholesaling, wholetailing, buy and hold investing, house flipping, and remote investing to mention a few. These options have their pros and cons and the model of choice depends on the context and goals of the company. For the purpose of this project, the fictional company House Rocket uses a model where the company search for good purchasing opportunities, with low prices and properties in good conditions where they can potentially make a profit when selling.
+The Real Estate industry possess multiple ways to generate revenue, including real estate agent, wholesaling, wholetailing, buy and hold investing, house flipping, and remote investing to mention a few. These options have their pros and cons and the model of choice depends on the context and goals of the company. For the purpose of this project, the fictional company House Rocket uses a model where the company search for good purchasing opportunities, with low prices and properties in good conditions where they can potentially make a profit when selling.
 
 **2. Business question**  
 
-The company has big challenges such as finding the best market opportunities and generate revenue. The company’s CEO, fortunatelly, is a data-driven person and makes his decisions on solid evidences, backed up by data. Currently, the company has a large database and the information it contains should drive the purchasing and selling decisions. Therefore, the House Rocket’s CEO had approached the Data Science team of the company with two questions, with which the answer would provide support for the decisions of the company:  
+The company has big challenges such as finding the best market opportunities and generate revenue. The company’s CEO, fortunatelly, is a data-driven person and makes decisions on solid evidences, backed up by data. Currently, the company has a large database and the information it contains should drive the purchasing and selling decisions. Therefore, the House Rocket’s CEO had approached the Data Science team of the company with two questions, with which the answer would provide support for the decisions of the company:  
 
     1. What are the properties House Rocket should buy and at what price?
     2. Once the property is bought, when is the best time to sell the property? And for what price?
@@ -43,14 +43,13 @@ The company has a large database of properties located in King’s County in Was
 | sqft_lot15 | 15 neighbours property’s land lot |
 
 
-**2.2 Premisses about the database**  
+**2.2 Description of the database**  
 
     • Bathrooms with ratio numbers are considered as not having all bathroom items;
     • The scores of the “view” column mean: 0 = no view, 1 = regular, 2 = medium, 3 = good, 4 = excellent;
     • The scores of the “condition” column mean: 1 = very bad, 2 = bad, 3 = medium, 4 = good, 5 = very good;
     • The scores in the column called “grade” were classified using a score band for each level: 1 to 3 – very low; 4 to 6 – low, 7 = medium, 8 to 10 = high, and 11 to 13 = very high;
-    • The seasonality influence the price of the property. The price fluctuates depending on the warmer or colder seasons of the year.  
-    
+    • The price fluctuates depending on the warmer or colder seasons of the year.  
     
 **3. Planning the Solution**  
 
@@ -72,7 +71,7 @@ For this project, I have used the following tools:
     • Streamlit  
     • Streamlit share  
 
-**3.3 Proccess**
+**3.3 Process**
 
 This project aims to respond to business questions using exploratory analysis of the available data. Therefore, the dataset was processed to answer these questions:  
 
@@ -80,11 +79,11 @@ This project aims to respond to business questions using exploratory analysis of
 
 Location and condition play an important role on property pricing. Therefore, the dataset was filtered using location as a grouping factor and the median was calculated, to avoid influence of extreme scores. Then, those properties with price below the median for that region and presented condition above agood condition were selected.  
 
-**3.3.2. Once the property is bought, when is the best time to sell the property? And for what price?**  
+**3.3.2. Once the property is bought, when is the best time and price for selling?**  
 
 Considering the seasonality, the chosen properties were re-grouped by location and season of the year and a new median was calculated. After this processing, the following conditions were applied for selling:  
 
-*3.3.2.a.* If the purchasing price was above the regional median, ocnsidering the seasonality, the selling price should be 10% above the purchasing price;  
+*3.3.2.a.* If the purchasing price was above the regional median, considering the seasonality, the selling price should be 10% above the purchasing price;  
 
 *3.3.2.b.* If the purchasing price was below the regional median, ocnsidering the seasonality, the selling price should be 30% above the purchasing price;  
 
